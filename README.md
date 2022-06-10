@@ -15,7 +15,7 @@ The project uses the [LHDiff](https://muhammad-asaduzzaman.com/research/) execut
 
 #### Installation
 
-1. Clone the repository: ```git clone https://github.com/mgiambi/vuln_tracker_C.git```
+1. Clone the repository: ```git clone https://github.com/mgiambi/foss-vuln-tracker-C.git```
 2. Move into the project folder and install the tool with the command: ```python setup.py install```
 
 #### Basic usage
@@ -24,7 +24,7 @@ If you successfullt completed the installation, you can run the tool from the te
 
 1. The path to the output (JSON) file
 2. The path to the git project which is to be searched for the vulnerability
-3. The hash of the commit in which the vulenrability has been fixed
+3. The hash of the commit in which the vulnerability has been fixed
 4. (optional) the hash of the latest commit which does not contain the vulnerability. Used for testing
 
 To display the list of options, just add the "-h" option when running the command.
@@ -70,6 +70,8 @@ The output JSON file has the following structure:
                                                                the test has been passed or not
 }
 ```
+
+NOTE: the program needs to read and write some files to allow the lhdiff tool to work correctly; thus, depending on where it is installed, it will probably need to be launched with administrator privleges.
 
 NOTE: in some machines the tool return the following error message: ```SHA could not be resolved```. This is due to some bug in GitPython, a library used by PyDriller. To fix this, you need to modify the PyDriller files. Find git_repository.py (in linux distros, it is probably located in a path similar to this: /usr/local/lib/<your-python-version>/dist-packages/<your-pydriller-version.egg>/pydriller) and make the following changes:
 
