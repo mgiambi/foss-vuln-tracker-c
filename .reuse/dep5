@@ -1,0 +1,21 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: vuln-tracker-c
+Upstream-Contact: Michael Giambi (University of Trento)
+Source: https://github.com/
+
+Files: src/change/*.py src/ldiff_wrapper/*.py src/lexer/*.py src/repository_wrapper/*.py src/slicer/*.py
+	src/tracker/*.py src/__init__.py src/__main__.py src/definitions.py src/setup.py src/README.md
+Copyright: Copyright (c) 2022 University of Trento
+License: GPL-3.0
+
+Files: src/ldiff_wrapper/lhdiff_2020.jar 
+Copyright: 2013, Muhammad Asaduzzaman, University of Saskatchewan
+License: GPL-2.0
+
+Files: PyDriller
+Copyright: 2018, PyDriller development team
+License: Apache-2.0
+
+Files: ply
+Copyright: 2001 David Beazley, ply contributors
+License: BSD

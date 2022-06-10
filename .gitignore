@@ -1,0 +1,3 @@
+dist/
+vuln_tracker_c.egg-info/
+!**/__pycache__/
