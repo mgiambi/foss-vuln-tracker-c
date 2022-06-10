@@ -71,6 +71,8 @@ The output JSON file has the following structure:
 }
 ```
 
+NOTE: the program needs to read and write some files to allow the lhdiff tool to work correctly; thus, depending on where it is installed, it will probably need to be launched with administrator privleges.
+
 NOTE: in some machines the tool return the following error message: ```SHA could not be resolved```. This is due to some bug in GitPython, a library used by PyDriller. To fix this, you need to modify the PyDriller files. Find git_repository.py (in linux distros, it is probably located in a path similar to this: /usr/local/lib/<your-python-version>/dist-packages/<your-pydriller-version.egg>/pydriller) and make the following changes:
 
 Line 0
