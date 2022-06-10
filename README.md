@@ -15,7 +15,7 @@ The project uses the [LHDiff](https://muhammad-asaduzzaman.com/research/) execut
 
 #### Installation
 
-1. Clone the repository: ```git clone https://github.com/mgiambi/vuln_tracker_C.git```
+1. Clone the repository: ```git clone https://github.com/mgiambi/foss-vuln-tracker-C.git```
 2. Move into the project folder and install the tool with the command: ```python setup.py install```
 
 #### Basic usage
