@@ -24,7 +24,7 @@ If you successfullt completed the installation, you can run the tool from the te
 
 1. The path to the output (JSON) file
 2. The path to the git project which is to be searched for the vulnerability
-3. The hash of the commit in which the vulenrability has been fixed
+3. The hash of the commit in which the vulnerability has been fixed
 4. (optional) the hash of the latest commit which does not contain the vulnerability. Used for testing
 
 To display the list of options, just add the "-h" option when running the command.
