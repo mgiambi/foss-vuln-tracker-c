@@ -1,9 +1,6 @@
 import pathlib
 from setuptools import find_packages, setup
 
-#HERE = pathlib.Path(__file__).parent
-#README = (HERE / "README.md").read_text()
-
 setup(
     name="vuln-tracker-c",
     version="1.0.0",
@@ -15,8 +12,8 @@ setup(
     license_files=('LICENSES/LICENSE.txt'),
     packages=["src", "src.change", "src.ldiff_wrapper", 
         "src.lexer", "src.repository_wrapper", "src.slicer", "src.tracker"],
-    #include_package_data=True,
     python_requires='>=3.0, <3.9',
+    data_files=[("src/ldiff_wrapper/", ["src/ldiff_wrapper/lhdiff_2020.jar"])],
     install_requires=[
         "pydriller==1.15",
         "ply"],
